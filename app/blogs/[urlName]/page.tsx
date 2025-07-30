@@ -59,7 +59,7 @@ export default async function BlogDetailPage(props: any) {
   const document = dom.window.document;
   const headings: { id: string; text: string }[] = [];
 
-  ["h1"].forEach((tag) => {
+  ["h2"].forEach((tag) => {
     document.querySelectorAll(tag).forEach((heading) => {
       const text = heading.textContent?.trim() || "";
       if (!text) return; // ✅ Skip empty headings

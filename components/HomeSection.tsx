@@ -92,7 +92,7 @@ export interface HomePageData {
 
 export default function Home({homeData}:{homeData:HomePageData}) {
 
-  console.log(homeData);
+  // console.log(homeData.script);
 
   return (
     <>

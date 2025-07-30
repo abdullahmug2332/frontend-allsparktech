@@ -1,4 +1,6 @@
 {
   "/page": "app/page.js",
-  "/custom-software-development/page": "app/custom-software-development/page.js"
+  "/custom-software-development/page": "app/custom-software-development/page.js",
+  "/blogs/page": "app/blogs/page.js",
+  "/contact/page": "app/contact/page.js"
 }
