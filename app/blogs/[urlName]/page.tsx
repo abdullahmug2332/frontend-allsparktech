@@ -42,7 +42,7 @@ export default async function BlogDetailPage(props: any) {
     description: string;
     urlName: string;
     image: string;
-    createdAt: string;
+    created_at: string;
     content: string;
   }
 
@@ -76,15 +76,33 @@ export default async function BlogDetailPage(props: any) {
 
   // ✅ Update blog.content with new HTML (with ids on headings)
   const updatedContent = document.body.innerHTML;
+  console.log("blog", blog)
   return (
     <div>
       <Topnav />
       <Navbar2 />
-      <BlogHeroSection title={blog.title} backgroundImage={blog.image} />
+      {/* <BlogHeroSection title={blog.title} backgroundImage={blog.image} /> */}
 
       <div className="w-[95%] xl:w-[80%] mx-auto flex flex-col md:flex-row ">
+
         {/* Content Area */}
-        <div className="w-full md:w-[75%] md:border-r md:border-[#dbdbdb] flex flex-col gap-[20px] px-[20px] py-[30px]">
+        <div className="w-full md:w-[75%] md:border-r md:border-[#dbdbdb] flex flex-col gap-[10px] px-[20px] py-[30px]">
+          <p className="text-[35px] font-bold leading-[32px] text-[#111827]">
+            {blog.title}
+          </p>
+          <p className="text-[18px]  leading-[32px] text-[#4b5563]">
+            {new Date(blog.created_at).toLocaleDateString('en-GB', {
+              day: '2-digit',
+              month: 'long',
+              year: 'numeric'
+            })}
+          </p>
+
+          <div className="mainimg">
+            <img src={`${baseURL}/images/blogs/${blog.image}`} className="rounded-[10px]" alt="MainImg " />
+          </div>
+
+
           <p className="text-[18px] leading-[32px] text-[#4b5563]">
             {blog.description}
           </p>

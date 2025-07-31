@@ -1913,6 +1913,9 @@ video {
 .rounded-xl {
   border-radius: 0.75rem;
 }
+.rounded {
+  border-radius: 0.25rem;
+}
 .rounded-l-md {
   border-top-left-radius: calc(var(--radius) - 2px);
   border-bottom-left-radius: calc(var(--radius) - 2px);
@@ -2340,6 +2343,15 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-\[40px\] {
+  font-size: 40px;
+}
+.text-\[35px\] {
+  font-size: 35px;
+}
+.text-\[15px\] {
+  font-size: 15px;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -2357,6 +2369,9 @@ video {
 }
 .uppercase {
   text-transform: uppercase;
+}
+.italic {
+  font-style: italic;
 }
 .\!leading-normal {
   line-height: 1.5 !important;
@@ -2475,6 +2490,17 @@ video {
 }
 .text-white\/80 {
   color: rgb(255 255 255 / 0.8);
+}
+.text-\[px\] {
+  color: px;
+}
+.text-\[black\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+.text-\[\#111827\] {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity, 1));
 }
 .underline {
   text-decoration-line: underline;
