@@ -93,37 +93,37 @@ html {
 }
 
 
-.prose h1 {
+.blogcontent h1 {
   font-size: 32px;
   margin-top: 15px;
   margin-bottom: 10px;
 }
-.prose h2 {
+.blogcontent h2 {
   font-size: 24px;
   margin-top: 14px;
   margin-bottom: 8px;
 }
-.prose h3 {
+.blogcontent h3 {
   font-size: 20px;
 }
-.prose h3 ,.prose ul,.prose ol{
+.blogcontent h3 ,.blogcontent ul,.blogcontent ol{
   margin-top: 12px;
   margin-bottom: 7px;
 }
-.prose h4 {
+.blogcontent h4 {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.prose strong {
+.blogcontent strong {
   margin-top: 9px;
   margin-bottom: 5px;
 }
-.prose p,.prose h5,.prose li, .prose a{
+.blogcontent p,.blogcontent h5,.blogcontent li, .blogcontent a{
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.prose img {
+.blogcontent img {
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -139,4 +139,9 @@ html {
 }
 .ql-align-left {
   text-align: left;
+}
+
+
+.blogcontent{
+  width: 100%;
 }

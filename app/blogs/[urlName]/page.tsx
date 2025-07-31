@@ -75,7 +75,7 @@ export default async function BlogDetailPage(props: any) {
 
   // ✅ Update blog.content with new HTML (with ids on headings)
   const updatedContent = document.body.innerHTML;
-  console.log("blog", blog)
+  console.log("updatedContent", updatedContent)
   return (
     <div>
       <Topnav />
@@ -96,21 +96,17 @@ export default async function BlogDetailPage(props: any) {
               year: 'numeric'
             })}
           </p>
+          <img src={`${baseURL}/images/blogs/${blog.image}`} className="rounded-[10px] !w-[100%]" alt="MainImg " />
 
-          <div className="mainimg">
-            <img src={`${baseURL}/images/blogs/${blog.image}`} className="rounded-[10px]" alt="MainImg " />
-          </div>
-
-
-          <p className="text-[18px] leading-[32px] text-[#4b5563]">
+          <p className="text-[15px] text-[#1f2937]">
             {blog.description}
           </p>
-
           <div
             style={{}}
-            className="prose prose-sm sm:prose lg:prose-lg max-w-none text-[#1f2937]"
+            className=" blogcontent text-[15px] text-[#1f2937]"
             dangerouslySetInnerHTML={{ __html: updatedContent }}
           />
+          
         </div>
 
         {/* Table of Contents Area */}
