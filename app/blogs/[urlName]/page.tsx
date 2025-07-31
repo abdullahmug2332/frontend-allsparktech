@@ -2,7 +2,6 @@
 import Navbar2 from "@/components/Navbar2";
 import Topnav from "@/components/Topnav";
 import Footer2 from "@/components/Footer2";
-import BlogHeroSection from "@/components/BlogHeroSection";
 import { baseURL } from "@/API/baseURL";
 import { JSDOM } from "jsdom";
 import axios from "axios";
