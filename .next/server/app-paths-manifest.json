@@ -1,7 +1,3 @@
 {
-  "/page": "app/page.js",
-  "/blogs/page": "app/blogs/page.js",
-  "/termsandconditions/page": "app/termsandconditions/page.js",
-  "/privacypolicy/page": "app/privacypolicy/page.js",
-  "/blogs/[urlName]/page": "app/blogs/[urlName]/page.js"
+  "/subservice/page": "app/subservice/page.js"
 }
