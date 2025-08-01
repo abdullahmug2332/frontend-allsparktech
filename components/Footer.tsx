@@ -129,9 +129,7 @@ export default function Footer() {
              <Link href="/privacypolicy" className="hover:underline">
               Privacy Policy
             </Link>
-             <Link href="https://allsparktechnologies.com/sitemap.html" className="hover:underline">
-              Site Map
-            </Link>
+
           </div>
         </div>
       </div>

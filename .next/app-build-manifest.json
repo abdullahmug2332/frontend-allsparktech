@@ -29,6 +29,17 @@
       "static/chunks/main-app.js",
       "static/css/app/privacypolicy/page.css",
       "static/chunks/app/privacypolicy/page.js"
+    ],
+    "/blogs/[urlName]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/blogs/[urlName]/page.css",
+      "static/chunks/app/blogs/[urlName]/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

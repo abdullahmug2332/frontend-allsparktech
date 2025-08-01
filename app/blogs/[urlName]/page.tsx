@@ -6,7 +6,6 @@ import { baseURL } from "@/API/baseURL";
 import { JSDOM } from "jsdom";
 import axios from "axios";
 import type { Metadata } from "next";
-import Image from "next/image";
 
 export async function generateMetadata(props: any): Promise<Metadata> {
   try {
@@ -76,7 +75,7 @@ export default async function BlogDetailPage(props: any) {
 
   // ✅ Update blog.content with new HTML (with ids on headings)
   const updatedContent = document.body.innerHTML;
-  console.log("updatedContent", updatedContent)
+  console.log("Blog :", blog)
   return (
     <div>
       <Topnav />
@@ -97,7 +96,7 @@ export default async function BlogDetailPage(props: any) {
               year: 'numeric'
             })}
           </p>
-          <Image src={`${baseURL}/images/blogs/${blog.image}`} className="rounded-[10px] !w-[100%]" alt="MainImg " />
+          <img src={`${baseURL}/images/blogs/${blog.image}`} className="rounded-[10px] !w-[100%]" alt="MainImg " />
 
           <p className="text-[15px] text-[#1f2937]">
             {blog.description}
