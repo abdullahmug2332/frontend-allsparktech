@@ -6,6 +6,14 @@ import { baseURL } from "@/API/baseURL";
 import { JSDOM } from "jsdom";
 import axios from "axios";
 import type { Metadata } from "next";
+import { MdOutlineDateRange } from "react-icons/md";
+import Image from "next/image";
+import authorimg from "@/public/images/blogs/blogauthor.jpg"
+import { FaLinkedin } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+
+
+
 
 export async function generateMetadata(props: any): Promise<Metadata> {
   try {
@@ -86,18 +94,38 @@ export default async function BlogDetailPage(props: any) {
 
         {/* Content Area */}
         <div className="w-full md:w-[75%] md:border-r md:border-[#dbdbdb] flex flex-col gap-[10px] px-[20px] py-[30px]">
+          {/* Title  */}
           <p className="text-[35px] font-bold leading-[32px] text-[#111827]">
             {blog.title}
           </p>
-          <p className="text-[18px]  leading-[32px] text-[#4b5563]">
-            {new Date(blog.created_at).toLocaleDateString('en-GB', {
-              day: '2-digit',
-              month: 'long',
-              year: 'numeric'
-            })}
-          </p>
-          <img src={`${baseURL}/images/blogs/${blog.image}`} className="rounded-[10px] !w-[100%]" alt="MainImg " />
 
+          <div className="flex gap-[10px]">
+            <Image src={authorimg} alt="author" className="w-[70px] h-[70px] object-cover border rounded-full  " />
+            <div>
+              <p className="text-[22px] font-medium text"> Irfan</p>
+              <div className="flex items-center gap-[5px]">
+                <FaLinkedin className="text-[25px] text-[#1469C7] hover:scale-[1.1] duration-500 cursor-pointer"/>
+                <FaTwitter className="text-[25px] bg-[#08A4F0] text-white rounded p-[4px] hover:scale-[1.1] duration-500 cursor-pointer"/>
+              </div>
+            </div>
+          </div>
+
+          {/* Date  */}
+          <div className="flex items-center gap-[5px]">
+            <MdOutlineDateRange className="text-[20px] text-[#384BFF]" />
+            <p className="text-[14px]  text-[#4b5563]">
+              {new Date(blog.created_at).toLocaleDateString('en-GB', {
+                day: '2-digit',
+                month: 'long',
+                year: 'numeric'
+              })}
+            </p>
+          </div>
+
+          {/* Main Image  */}
+          <img src={`${baseURL}/images/blogs/${blog.image}`} className="rounded-[10px] !w-[100%]" alt="MainImg " />
+          
+          {/* Description  */}
           <p className="text-[15px] text-[#1f2937]">
             {blog.description}
           </p>
@@ -106,7 +134,7 @@ export default async function BlogDetailPage(props: any) {
             className=" blogcontent text-[15px] text-[#1f2937]"
             dangerouslySetInnerHTML={{ __html: updatedContent }}
           />
-          
+
         </div>
 
         {/* Table of Contents Area */}
