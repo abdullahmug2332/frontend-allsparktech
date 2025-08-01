@@ -99,17 +99,7 @@ export default async function BlogDetailPage(props: any) {
             {blog.title}
           </p>
 
-          <div className="flex gap-[10px]">
-            <Image src={authorimg} alt="author" className="w-[70px] h-[70px] object-cover border rounded-full  " />
-            <div>
-              <p className="text-[22px] font-medium text"> Irfan</p>
-              <div className="flex items-center gap-[5px]">
-                <FaLinkedin className="text-[25px] text-[#1469C7] hover:scale-[1.1] duration-500 cursor-pointer"/>
-                <FaTwitter className="text-[25px] bg-[#08A4F0] text-white rounded p-[4px] hover:scale-[1.1] duration-500 cursor-pointer"/>
-              </div>
-            </div>
-          </div>
-
+        
           {/* Date  */}
           <div className="flex items-center gap-[5px]">
             <MdOutlineDateRange className="text-[20px] text-[#384BFF]" />
@@ -134,6 +124,18 @@ export default async function BlogDetailPage(props: any) {
             className=" blogcontent text-[15px] text-[#1f2937]"
             dangerouslySetInnerHTML={{ __html: updatedContent }}
           />
+          
+           {/* Author  */}
+          <div className="flex gap-[10px]">
+            <Image src={authorimg} alt="author" className="w-[70px] h-[70px] object-cover border border-[#384BFF] rounded-full  " />
+            <div>
+              <p className="text-[20px] leading-[29px] font-medium border-b-2 border-[#384BFF] text">by Irfan</p>
+              <div className="flex items-center gap-[5px] mt-[5px]">
+                <FaLinkedin className="text-[23px]  text-[#384BFF] hover:scale-[1.1] duration-500 cursor-pointer"/>
+                <FaTwitter className="text-[23px] text-[#384BFF] hover:scale-[1.1] duration-500 cursor-pointer"/>
+              </div>
+            </div>
+          </div>
 
         </div>
 
