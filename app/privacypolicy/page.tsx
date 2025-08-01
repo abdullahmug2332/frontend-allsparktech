@@ -13,24 +13,36 @@ export async function generateMetadata() {
       follow: true,
     },
     alternates: {
-      canonical: "https://www.allsparktechnologies.com/privacy-policy",
+      canonical: "https://allsparktechnologies.com/privacypolicy",
     },
     openGraph: {
       title: "Privacy Policy | Allspark Technologies",
       description:
         "Allspark Technologies respects your privacy. Learn how we collect, use, and protect your data under U.S. and GDPR compliance standards.",
-      url: "https://www.allsparktechnologies.com/privacy-policy",
+      url: "https://allsparktechnologies.com/privacypolicy",
       type: "website",
-      siteName: "AllSpark Technologies",
+      siteName: "Allspark Technologies",
+      images: [
+        {
+          url: "https://testtest.libererllc.com/images/home/aboutThumb1_1.png",
+          width: 1200,
+          height: 630,
+          alt: "Allspark Technologies Privacy",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: "Privacy Policy | Allspark Technologies",
       description:
         "Allspark Technologies respects your privacy. Learn how we collect, use, and protect your data under U.S. and GDPR compliance standards.",
+      images: [
+        "https://testtest.libererllc.com/images/home/aboutThumb1_1.png",
+      ],
     },
   };
 }
+
 
 
 export default function PrivacyPolicy() {

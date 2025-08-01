@@ -2,6 +2,7 @@ import Footer2 from "@/components/Footer2";
 import Navbar2 from "@/components/Navbar2";
 import Topnav from "@/components/Topnav";
 import React from "react";
+
 export async function generateMetadata() {
   return {
     title: "Terms and Conditions | AllSpark Technologies",
@@ -12,24 +13,36 @@ export async function generateMetadata() {
       follow: true,
     },
     alternates: {
-      canonical: "https://www.allsparktechnologies.com/terms-and-conditions",
+      canonical: "https://allsparktechnologies.com/termsandconditions",
     },
     openGraph: {
       title: "Terms and Conditions | AllSpark Technologies",
       description:
         "Read the Terms and Conditions for using AllSpark Technologies' website and services. Learn about your responsibilities and our legal limitations.",
-      url: "https://www.allsparktechnologies.com/terms-and-conditions",
+      url: "https://allsparktechnologies.com/termsandconditions",
       type: "website",
       siteName: "AllSpark Technologies",
+      images: [
+        {
+          url: "https://testtest.libererllc.com/images/home/aboutThumb1_1.png",
+          width: 1200,
+          height: 630,
+          alt: "Terms and Conditions - AllSpark Technologies",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: "Terms and Conditions | AllSpark Technologies",
       description:
         "Read the Terms and Conditions for using AllSpark Technologies' website and services. Learn about your responsibilities and our legal limitations.",
+      images: [
+        "https://testtest.libererllc.com/images/home/aboutThumb1_1.png",
+      ],
     },
   };
 }
+
 
 
 export default function page() {
