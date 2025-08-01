@@ -2,7 +2,6 @@ import Footer2 from "@/components/Footer2";
 import Navbar2 from "@/components/Navbar2";
 import Topnav from "@/components/Topnav";
 import React from "react";
-import Head from "next/head";
 export async function generateMetadata() {
   return {
     title: "Terms and Conditions | AllSpark Technologies",
