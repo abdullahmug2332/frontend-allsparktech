@@ -5,27 +5,27 @@ export async function generateMetadata() {
   return {
     title: "Contact AllSpark Technologies | Custom Software Development & AI Experts",
     description:
-      "Get in touch with AllSpark Technologies, a US-based software development company. Call, email, or schedule a consultation with our software and AI experts today.",
-    alternates: {
-      canonical: "https://allsparktechnologies.com/contact",
-    },
+      "Call, email, or schedule a consultation with our US-based software development and AI experts.",
     robots: {
       index: true,
       follow: true,
     },
+    alternates: {
+      canonical: "https://allsparktechnologies.com/contact/",
+    },
     openGraph: {
       title: "Contact AllSpark Technologies | Custom Software Development & AI Experts",
       description:
-        "Get in touch with AllSpark Technologies, a US-based software development company. Call, email, or schedule a consultation with our software and AI experts today.",
-      url: "https://allsparktechnologies.com/contact",
+        "Call, email, or schedule a consultation with our US-based software development and AI experts.",
+      url: "https://allsparktechnologies.com/contact/",
       type: "website",
       siteName: "AllSpark Technologies",
       images: [
         {
-          url: "https://allsparktechnologies.com/assets/contact-og.jpg",
+          url: "https://testtest.libererllc.com/images/contact/contact_hero_1753895832675.png",
           width: 1200,
           height: 630,
-          alt: "Contact AllSpark",
+          alt: "Contact AllSpark Technologies",
         },
       ],
     },
@@ -33,11 +33,14 @@ export async function generateMetadata() {
       card: "summary_large_image",
       title: "Contact AllSpark Technologies | Custom Software Development & AI Experts",
       description:
-        "Get in touch with AllSpark Technologies, a US-based software development company. Call, email, or schedule a consultation with our software and AI experts today.",
-      images: ["https://allsparktechnologies.com/assets/contact-og.jpg"],
+        "Call, email, or schedule a consultation with our US-based software development and AI experts.",
+      images: [
+        "https://testtest.libererllc.com/images/contact/contact_hero_1753895832675.png",
+      ],
     },
   };
 }
+
 
 async function fetchContactData() {
   const res = await fetch(`${baseURL}/contactdata`, {

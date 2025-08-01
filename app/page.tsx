@@ -3,30 +3,44 @@ import HomeSection from "@/components/HomeSection"
 
 export async function generateMetadata() {
   return {
-    title: "AllSpark Technologies | Custom Software Development Company in USA",
-    description: "AllSpark Technologies builds scalable software development solutions, AI solutions, mobile apps, cloud systems, and offers tech-enabled services in USA",
-    alternates: {
-      canonical: "https://allsparktechnologies.com",
-    },
-    openGraph: {
-      title: "AllSpark Technologies | Custom Software Development Company in USA",
-      description: "AllSpark Technologies builds scalable software development solutions, AI solutions, mobile apps, cloud systems, and offers tech-enabled services in USA",
-      url: "https://allsparktechnologies.com",
-      images: [
-        {
-          url: "https://allsparktechnologies.com/assets/og-image.jpg",
-          width: 1200,
-          height: 630,
-          alt: "AllSpark Technologies",
-        },
-      ],
-    },
+    title: "Custom Software Development Company & AI Solutions | AllSpark Technologies",
+    description:
+      "AllSpark Technologies builds scalable software development solutions, AI solutions, mobile apps, cloud systems, and offers tech-enabled services in USA",
     robots: {
       index: true,
       follow: true,
     },
+    alternates: {
+      canonical: "https://allsparktechnologies.com/",
+    },
+    openGraph: {
+      type: "website",
+      url: "https://allsparktechnologies.com/",
+      title: "Custom Software Development Company & AI Solutions | AllSpark Technologies",
+      description:
+        "AllSpark Technologies builds scalable software development solutions, AI solutions, mobile apps, cloud systems, and offers tech-enabled services in USA",
+      images: [
+        {
+          url: "https://allsparktechnologies.com/images/logo.svg",
+          width: 1200,
+          height: 630,
+          alt: "AllSpark Technologies Logo",
+        },
+      ],
+      siteName: "AllSpark Technologies",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Custom Software Development Company & AI Solutions | AllSpark Technologies",
+      description:
+        "AllSpark Technologies builds scalable software development solutions, AI solutions, mobile apps, cloud systems, and offers tech-enabled services in USA",
+      images: [
+        "https://allsparktechnologies.com/images/logo.svg",
+      ],
+    },
   };
 }
+
 
 
 

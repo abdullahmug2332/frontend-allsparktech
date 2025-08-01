@@ -3,41 +3,44 @@ import AboutClient from "@/components/AboutClient";
 
 export async function generateMetadata() {
   return {
-    title: "About AllSpark Technologies | US-Based Software Development & AI Company",
-    description:"A trusted software development and AI company in the USA. Discover how our experienced developers deliver innovative, tech-enabled digital solutions.",
-    metadataBase: new URL("https://allsparktechnologies.com"),
-    alternates: {
-      canonical: "/about",
-    },
-    openGraph: {
-      title: "About AllSpark Technologies | US-Based Software Development & AI Company",
-      description:
-        "A trusted software development and AI company in the USA. Discover how our experienced developers deliver innovative, tech-enabled digital solutions.",
-      url: "https://allsparktechnologies.com/about",
-      type: "website",
-      siteName: "AllSpark Technologies",
-      images: [
-        {
-          url: "https://allsparktechnologies.com/assets/og-image.jpg",
-          width: 1200,
-          height: 630,
-          alt: "AllSpark Technologies",
-        },
-      ],
-    },
+    title: "About AllSpark Technologies | US-Based Software Development Company",
+    description:
+      "Meet AllSpark Technologies a trusted software development and AI company in the USA. Learn how we help businesses grow with innovative digital solutions.",
     robots: {
       index: true,
       follow: true,
     },
+    alternates: {
+      canonical: "https://allsparktechnologies.com/about/",
+    },
+    openGraph: {
+      title: "About AllSpark Technologies | US-Based Software Development Company",
+      description:
+        "Meet AllSpark Technologies a trusted software development and AI company in the USA. Learn how we help businesses grow with innovative digital solutions.",
+      url: "https://allsparktechnologies.com/about/",
+      type: "website",
+      siteName: "AllSpark Technologies",
+      images: [
+        {
+          url: "https://testtest.libererllc.com/images/about/hero.webp",
+          width: 1200,
+          height: 630,
+          alt: "About AllSpark Technologies",
+        },
+      ],
+    },
     twitter: {
       card: "summary_large_image",
-      title: "About AllSpark Technologies | US-Based Software Development & AI Company",
+      title: "About AllSpark Technologies | US-Based Software Development Company",
       description:
-        "A trusted software development and AI company in the USA. Discover how our experienced developers deliver innovative, tech-enabled digital solutions.",
-      images: ["https://allsparktechnologies.com/assets/og-image.jpg"],
+        "Meet AllSpark Technologies a trusted software development and AI company in the USA. Learn how we help businesses grow with innovative digital solutions.",
+      images: [
+        "https://testtest.libererllc.com/images/about/hero.webp",
+      ],
     },
   };
 }
+
 
 
 async function fetchAboutData() {
