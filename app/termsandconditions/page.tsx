@@ -3,40 +3,39 @@ import Navbar2 from "@/components/Navbar2";
 import Topnav from "@/components/Topnav";
 import React from "react";
 import Head from "next/head";
+export async function generateMetadata() {
+  return {
+    title: "Terms and Conditions | AllSpark Technologies",
+    description:
+      "Read the Terms and Conditions for using AllSpark Technologies' website and services. Learn about your responsibilities and our legal limitations.",
+    robots: {
+      index: true,
+      follow: true,
+    },
+    alternates: {
+      canonical: "https://www.allsparktechnologies.com/terms-and-conditions",
+    },
+    openGraph: {
+      title: "Terms and Conditions | AllSpark Technologies",
+      description:
+        "Read the Terms and Conditions for using AllSpark Technologies' website and services. Learn about your responsibilities and our legal limitations.",
+      url: "https://www.allsparktechnologies.com/terms-and-conditions",
+      type: "website",
+      siteName: "AllSpark Technologies",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Terms and Conditions | AllSpark Technologies",
+      description:
+        "Read the Terms and Conditions for using AllSpark Technologies' website and services. Learn about your responsibilities and our legal limitations.",
+    },
+  };
+}
+
 
 export default function page() {
   return (
     <>
-      <Head>
-        <title>Terms and Conditions | AllSpark Technologies</title>
-        <meta
-          name="description"
-          content="Read the Terms and Conditions for using AllSpark Technologies website and services. Understand your rights and responsibilities."
-        />
-        <meta name="robots" content="index, follow" />
-        <link
-          rel="canonical"
-          href="https://allsparktechnologies.com/terms-and-conditions"
-        />
-        <meta
-          property="og:title"
-          content="Terms and Conditions | AllSpark Technologies"
-        />
-        <meta
-          property="og:description"
-          content="Read the Terms and Conditions for using AllSpark Technologies website and services. Understand your rights and responsibilities."
-        />
-        <meta
-          property="og:url"
-          content="https://allsparktechnologies.com/terms-and-conditions"
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://allsparktechnologies.com/assets/terms-og.jpg"
-        />
-      </Head>
-
       <Topnav />
       <Navbar2 />
       <section className="max-w-7xl mx-auto px-4 my-8 py-8">

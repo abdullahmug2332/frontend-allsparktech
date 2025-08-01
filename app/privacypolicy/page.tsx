@@ -4,39 +4,39 @@ import Topnav from "@/components/Topnav";
 import React from "react";
 import Head from "next/head";
 
+export async function generateMetadata() {
+  return {
+    title: "Privacy Policy | Allspark Technologies",
+    description:
+      "Allspark Technologies respects your privacy. Learn how we collect, use, and protect your data under U.S. and GDPR compliance standards.",
+    robots: {
+      index: true,
+      follow: true,
+    },
+    alternates: {
+      canonical: "https://www.allsparktechnologies.com/privacy-policy",
+    },
+    openGraph: {
+      title: "Privacy Policy | Allspark Technologies",
+      description:
+        "Allspark Technologies respects your privacy. Learn how we collect, use, and protect your data under U.S. and GDPR compliance standards.",
+      url: "https://www.allsparktechnologies.com/privacy-policy",
+      type: "website",
+      siteName: "AllSpark Technologies",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Privacy Policy | Allspark Technologies",
+      description:
+        "Allspark Technologies respects your privacy. Learn how we collect, use, and protect your data under U.S. and GDPR compliance standards.",
+    },
+  };
+}
+
+
 export default function PrivacyPolicy() {
   return (
     <>
-      <Head>
-        <title>Privacy Policy | AllSpark Technologies</title>
-        <meta
-          name="description"
-          content="Allspark Technologies respects your privacy. Learn how we collect, use, and protect your data under U.S. and GDPR compliance standards."
-        />
-        <meta name="robots" content="index, follow" />
-        <link
-          rel="canonical"
-          href="https://allsparktechnologies.com/privacy-policy"
-        />
-        <meta
-          property="og:title"
-          content="Privacy Policy | AllSpark Technologies"
-        />
-        <meta
-          property="og:description"
-          content="Allspark Technologies respects your privacy. Learn how we collect, use, and protect your data under U.S. and GDPR compliance standards."
-        />
-        <meta
-          property="og:url"
-          content="https://allsparktechnologies.com/privacy-policy"
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://allsparktechnologies.com/assets/privacy-og.jpg"
-        />
-      </Head>
-
       <Topnav />
       <Navbar2 />
       <section className="max-w-7xl mx-auto px-4 my-8 py-8">
